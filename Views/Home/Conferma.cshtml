@@ -1,0 +1,14 @@
+@model dbContext
+@{
+    ViewData ["Title"]= "Conferma";
+
+}
+@foreach (var item in @Model.Utenti){
+ <div>@item.Nome</div>
+<div>@item.Cognome</div>
+<div>@item.Email</div>
+<div>@item.DataDiNascita</div>
+<div>@item.sesso</div>
+<div>@item.ruolo</div>
+
+}
